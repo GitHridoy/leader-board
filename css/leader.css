@@ -95,3 +95,31 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/*Media Quary*/
+@media only screen and (max-width:688px) {
+        .container{
+            width: 100%;
+        }
+         .players, .blogs{
+            
+            grid-template-columns: repeat(1, 1fr);
+         }
+         .player, .blog{
+            flex-direction: column;
+         }
+         .courses{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 50px;
+            
+         }
+}
+/*Mediam Device*/
+@media only screen and (min-width: 689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
